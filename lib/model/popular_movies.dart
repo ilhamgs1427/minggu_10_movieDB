@@ -27,6 +27,7 @@ class PopularMovies {
     data['page'] = this.page;
     data['total_results'] = this.totalResults;
     data['total_pages'] = this.totalPages;
+    // ignore: unnecessary_null_comparison
     if (this.results != null) {
       data['results'] = this.results.map((v) => v.toJson()).toList();
     }
